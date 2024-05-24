@@ -1,0 +1,138 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.cards {
+  display: grid;
+  gap: 16px;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  max-width: 424px;
+  min-height: 400px;
+  border-radius: 4px;
+}
+
+.tap, 
+.door, 
+.outdoor {
+  border: 2px solid #179D2E;
+}
+
+.paint, 
+.picture {
+  border: 2px solid #0177B8;
+}
+
+.furniture,
+.installation {
+  border: 2px solid #F5AF23;
+}
+
+.electrical, 
+.home {
+  border: 2px solid #F02E2C;
+}
+
+.card__icon {
+  width: 30%;
+  align-self: flex-end;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__title {
+  color: #181833;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 20px;
+  margin-top: 24px;
+}
+
+.card__list-text {
+  color: #2D2D2D;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.card__link {
+  color: inherit;
+  align-self: flex-end;
+}
+
+@media (min-width: 576px) {
+  .cards {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card__title {
+    font-size: 30px;
+  }
+
+  .card__list {
+    gap: 10px;
+  }
+
+  .card__list-text {
+    font-size: 22px;
+  }
+
+  .card__link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .card__title {
+    font-size: 36px;
+  }
+
+  .card__list {
+    gap: 12px;
+  }
+
+  .card__list-text {
+    font-size: 24px;
+  }
+
+  .card__link {
+    font-size: 24px;
+  }
+}
